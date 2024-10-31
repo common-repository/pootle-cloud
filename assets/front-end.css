@@ -1,0 +1,123 @@
+/**
+ * Plugin front end styles
+ *
+ * @package Pootle_Cloud
+ * @version 1.0.0
+ */
+#pcld-app-wrap, #pcld-app {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000000;
+	background: rgba(0,0,0,0.25);
+	margin: auto;
+}
+
+iframe#pcld-app {
+	z-index: 0;
+	background: #fff;
+	width: calc( 100vw - 50px );
+	height: calc( 100vh - 50px );
+}
+
+#pcld-app-wrap > i {
+	display: block;
+	float:right;
+	font-size: 35px;
+	color: #fff;
+	padding: 11px;
+	position: relative;
+	z-index: 7;
+	cursor: pointer;
+}
+
+#pcld-tpl-name-dlg {
+	text-align: center;
+	padding: 1em;
+}
+
+#pootlepb-pootle-cloud-row-tab button {
+	display: block;
+	width: 100%;
+	margin: 0 auto 1em;
+	cursor: pointer;
+}
+
+.pcld-logged-in #pootle-cloud-new-user,
+#pootle-cloud-user-actions {
+	display: none;
+}
+
+.pcld-logged-in #pootle-cloud-user-actions {
+	display: block;
+}
+
+#pcld-template-tabs ul {
+	width: 100%;
+	height: auto;
+	display: flex;
+	background: #eee;
+	padding: 0 3px;
+}
+
+#pcld-template-tabs ul li {
+	flex: 1 0 110px
+}
+
+#pcld-template-tabs ul a {
+	padding: 1em;
+	text-align: center;
+	display:block;
+	color: #333;
+	border-radius: 5px 5px 0 0;
+	background: #ddd;
+	margin: 7px 4px 0;
+}
+
+#pcld-template-tabs ul .ppb-state-active a {
+	background: #fff;
+}
+
+#pootlepb-design-templates.pootlepb-dialog {
+	margin-top: 2px;
+}
+
+#pcld-my-designs > h4 {
+	text-align: center;
+}
+
+#pcld-my-designs > .ppb-tpl ~ h4 {
+	display: none;
+}
+
+.tpl-author:before {
+	content: 'By ';
+}
+
+.tpl-author {
+	font-size: 12px;
+	background: rgba(255,255,255,0.5);
+	color: #767;
+	padding-left: 5px;
+}
+
+#pootlepb-design-templates .ppb-tpl .fa-heart.top-left-icon {
+	top: 45px;
+	background: none;
+	background: #fff;
+	color: #000;
+	opacity: 0.7;
+}
+
+#pootlepb-design-templates .ppb-tpl .fa-heart.top-left-icon:before {
+	color: #f44;
+	position: absolute;
+	right: -5px;
+	text-shadow: 1px -1px 0 #fff, 1px 1px 0 #fff, 0px -2px 0 #fff;
+}
+
+.ppb-tpl:hover .tpl-author {
+	top: -99px;
+}
